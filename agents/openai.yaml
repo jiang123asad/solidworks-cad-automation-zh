@@ -1,0 +1,4 @@
+interface:
+  display_name: "中文 SolidWorks 助手"
+  short_description: "中文引导本机 CAD 检查、改型与导出，记录验证结果，说明工程图和装配能力边界"
+  default_prompt: "使用 $solidworks-cad-automation 按中文任务入口检查环境，在副本上完成我的 CAD 任务，并用中文总结输出与验证限制。"
