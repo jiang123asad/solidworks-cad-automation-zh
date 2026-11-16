@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "version": "1.4.1",
+  "validation_scope": "SW2026 SP1.1: local entrypoint 17 workflow checks, 11 extended examples, smoke 11 pass/3 skip; external backend basic views/native reopen/PDF only; manufacturing dimension completeness not accepted. Historical references retain their original scope.",
+  "capabilities": [
+    {
+      "id": "inspect",
+      "name": "零件检查",
+      "status": "已实测",
+      "delivery": "本地 CLI",
+      "limitation": "零件全部实体/特征树；不是几何等价证明",
+      "reference": "references/capability-matrix.md"
+    },
+    {
+      "id": "render",
+      "name": "标准视图图像",
+      "status": "已实测",
+      "delivery": "本地 CLI",
+      "limitation": "SW 图形区 PNG；不做照片级渲染",
+      "reference": "references/recipes.md"
+    },
+    {
+      "id": "export",
+      "name": "中性导出",
+      "status": "已实测",
+      "delivery": "本地 CLI",
+      "limitation": "保存与文件生成检查；接收方兼容待核对",
+      "reference": "references/capability-matrix.md"
+    },
+    {
+      "id": "chamfer",
+      "name": "两端倒角",
+      "status": "已实测",
+      "delivery": "本地 CLI",
+      "limitation": "指定轴对齐几何；副本/体积与保存回读",
+      "reference": "references/recipes.md"
+    },
+    {
+      "id": "cone",
+      "name": "指定端密封锥",
+      "status": "已实测",
+      "delivery": "本地 CLI",
+      "limitation": "单实体/单轴对齐；目标角度、位置、宽度与体积核对",
+      "reference": "references/recipes.md"
+    },
+    {
+      "id": "compare",
+      "name": "目录指标对比",
+      "status": "已实测",
+      "delivery": "本地 CLI",
+      "limitation": "不证明等几何；不支持装配几何比较",
+      "reference": "references/capability-matrix.md"
+    },
+    {
+      "id": "threads",
+      "name": "实体螺纹",
+      "status": "已实测",
+      "delivery": "参考配方",
+      "limitation": "给定 M10×1.5 样例；未封装通用命令",
+      "reference": "references/threads.md"
+    },
+    {
+      "id": "mates",
+      "name": "装配/机构/爆炸",
+      "status": "部分通过",
+      "delivery": "参考配方",
+      "limitation": "皮带联动与机械配合全行程仍有缺口",
+      "reference": "references/assembly-mates.md"
+    },
+    {
+      "id": "drawings",
+      "name": "工程图标注",
+      "status": "部分通过",
+      "delivery": "参考配方",
+      "limitation": "孔表 PDF 未通过，完整生产验收待补",
+      "reference": "references/drawings-annotations.md"
+    },
+    {
+      "id": "simulation",
+      "name": "基础静力",
+      "status": "部分通过",
+      "delivery": "参考配方",
+      "limitation": "求解/位移回读通过；云图后续操作崩溃，未完成收敛",
+      "reference": "references/simulation.md"
+    },
+    {
+      "id": "drawing-backend",
+      "name": "扩展工程图后端",
+      "status": "部分通过",
+      "delivery": "可选 CLI 适配",
+      "limitation": "基础三视图/原生重开/PDF 已联调；样例缺外形及孔位完整尺寸，仍需人工验收",
+      "reference": "references/backend-integration.md"
+    },
+    {
+      "id": "addons",
+      "name": "其他附加模块",
+      "status": "当前不可用",
+      "delivery": "无执行接口",
+      "limitation": "未验证 Motion/Flow/CAM/Routing/PDM 的计算和许可",
+      "reference": "references/simulation.md"
+    }
+  ]
+}

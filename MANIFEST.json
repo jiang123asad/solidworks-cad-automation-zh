@@ -1,0 +1,269 @@
+{
+  "name": "solidworks-cad-automation",
+  "version": "1.4.1",
+  "generated_at": "2026-11-16",
+  "entry": "SKILL.md",
+  "install": "INSTALL.md",
+  "readme": "README.md",
+  "requirements": {
+    "os": "Windows",
+    "python": ">=3.9",
+    "core": [
+      "pywin32"
+    ],
+    "render": [
+      "Pillow"
+    ],
+    "legacy_gui": [
+      "Pillow",
+      "numpy"
+    ],
+    "software": "Licensed local SolidWorks",
+    "basic_install": [
+      "pywin32>=305 on Windows",
+      "Pillow>=9"
+    ],
+    "optional_backend": "Separate wzyn checkout 36bc337357723b9763759ff06e4a1afab990b823; independent Python >=3.10 and Git; not bundled"
+  },
+  "validation": {
+    "offline_tests": 40,
+    "cli_help_checks": 22,
+    "skill_validator": "passed",
+    "cad_runtime_tests": "SW2026 SP1.1: phase1 82 cases 81 pass, dimension import resolved in phase2; phase2 34 cases 32 pass / 2 partial; see runtime-validation.md for boundaries and terminal display-adjustment crash",
+    "local_typelib_major": 34,
+    "organization": "Chinese CLI/menu/setup/report/locking/pending-state and optional fixed-revision drawing adapter added; existing CAD scripts unchanged",
+    "public_release_checks": "40 offline tests; 9 legacy plus 13 new help checks; Windows CMD launcher with Chinese/space path; no-connect doctor report; syntax/JSON/examples/links/guide/hash/ZIP checks; SW2026 SP1.1 live validation: local 17 checks, extended 11 pass, smoke 11 pass/3 skip, fresh installation passed",
+    "assistant_tests": 17,
+    "backend_integration": "Basic 3-view/native reopen/PDF tested; manufacturing dimension completeness not accepted; manual review required"
+  },
+  "file_count": 45,
+  "file_count_excludes": "MANIFEST.json",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 714,
+      "sha256": "0c6ce6d3c25a7f6ef4f56664e3711031a889bfed1a71e97fd69436b105eaffec"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "bytes": 360,
+      "sha256": "e05fb855bbb0b41e6b4c43d9fa7e778f44ca96d64eb535c3a778946cee806ddd"
+    },
+    {
+      "path": "capabilities.json",
+      "bytes": 3624,
+      "sha256": "7f5ba742055fa98f03643ec44553a2e5f4af52d88ff980ed69bf27f9c78976c6"
+    },
+    {
+      "path": "INSTALL.md",
+      "bytes": 3045,
+      "sha256": "5f2e0508d8553c0fdcf391471cdf7a499e16f08e2db7add0495e24e1f8888bf3"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1116,
+      "sha256": "49751dcc27fe7034cc4ff4e8daab2737e1f5f83af12b05d6ce778433f515aeac"
+    },
+    {
+      "path": "licenses/solidworks-automation-skill-MIT.txt",
+      "bytes": 1118,
+      "sha256": "697f5fbc7db69b6d8908a359695512e7df39271b4eb603c3643d224c7519813d"
+    },
+    {
+      "path": "PRIVACY.md",
+      "bytes": 2862,
+      "sha256": "46eaa658aa82cbba91d26a9e06fdda670520357d15942ec4f9b52c781462aa5c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4513,
+      "sha256": "99b2db1754d2112397c6fb1a54581fe191737ebaf77694e832daa71c1248823d"
+    },
+    {
+      "path": "references/api-pitfalls.md",
+      "bytes": 6816,
+      "sha256": "ae89e45c8ee2ebb92bfadf4a201a99f2c730faa23f5a48f0c32d222d86dee303"
+    },
+    {
+      "path": "references/assembly-mates.md",
+      "bytes": 3224,
+      "sha256": "3c745d844665aeb693e22c37374be4a6463628efd0ab32b2bca00563bbbd0314"
+    },
+    {
+      "path": "references/backend-integration.md",
+      "bytes": 4197,
+      "sha256": "912684b4dc3abbdf1c8c448bdab0370f41c00310c38166466bdaeda71b9e5be3"
+    },
+    {
+      "path": "references/capability-matrix.md",
+      "bytes": 3775,
+      "sha256": "5248fff4bbd934e32108332b1cb9e76a45c7ff5a4a8bd2cf95cbe69371bec69b"
+    },
+    {
+      "path": "references/drawings-annotations.md",
+      "bytes": 3600,
+      "sha256": "bd243690b2d7a8dfec6cd4de0a133ecf39c5fb1027a2625913cfc17b223029e5"
+    },
+    {
+      "path": "references/execution-and-recovery.md",
+      "bytes": 2605,
+      "sha256": "b174414bd44a69b7f67e3996a310adc51181846fb5f998131c3019088f32c9c6"
+    },
+    {
+      "path": "references/extended-api-recipes.md",
+      "bytes": 3111,
+      "sha256": "202c9c6561f16fd7b240d0fb427d9dd74f2f4b0b35bf54501b4a4d285ffabaab"
+    },
+    {
+      "path": "references/gui-and-tooling.md",
+      "bytes": 2625,
+      "sha256": "a2a43efb4cbd98bc7ca9254c369f64f25ca508800cd9d218ad2b586c361498b2"
+    },
+    {
+      "path": "references/live-validation-1.4.1.md",
+      "bytes": 3010,
+      "sha256": "670a7e3db80856df8bc8e60a47d6a4e5ffb005fc52800e3187193dc2b2449f6e"
+    },
+    {
+      "path": "references/recipes.md",
+      "bytes": 3146,
+      "sha256": "a42c3f0a2d0d4c2545dead0b3ce3e653558de79309f3c20403950b5f108c46a1"
+    },
+    {
+      "path": "references/runtime-validation.md",
+      "bytes": 4913,
+      "sha256": "45e68c0610eb8def9a68e6d45eae9a2f458306bbca78222a993b7bcc8c5d3724"
+    },
+    {
+      "path": "references/simulation.md",
+      "bytes": 2094,
+      "sha256": "a484a8d7b0bce91273b7c8950d3cf56aec401ce40f3e74bbcd15f977be725626"
+    },
+    {
+      "path": "references/threads-mates-drawings-simulation.md",
+      "bytes": 868,
+      "sha256": "b0ab2d8022a4a1df523b15af1b9093f416aa14e5e604f727217523de728215d9"
+    },
+    {
+      "path": "references/threads.md",
+      "bytes": 1028,
+      "sha256": "03ff7b6b46992642665169363efebb0fe9baf5f083e5ec03ca41cba79de52e36"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 120,
+      "sha256": "6353bbd1c21db90969cdd37a9c62e22f9afe4fb737b5e06901ee9a1514bd5f6d"
+    },
+    {
+      "path": "scripts/add_cone.py",
+      "bytes": 8519,
+      "sha256": "2d679b90227248498dc93309fb491af897d09abbceb17f66d0a556647a125972"
+    },
+    {
+      "path": "scripts/api_selftest.py",
+      "bytes": 9940,
+      "sha256": "1691865139ca483b049508194c1e07de2fa4695057f0e3327426e139195e92d9"
+    },
+    {
+      "path": "scripts/batch_support.py",
+      "bytes": 3300,
+      "sha256": "e4fe2975e03296b81dc281e9e5e5e3b5ae75b306e76e3ee75b6e6edfe8a28b02"
+    },
+    {
+      "path": "scripts/cad_assistant.py",
+      "bytes": 27800,
+      "sha256": "033a2064fcfa04a828b5050bbdbb4e03b03df73738ff1bc58be4b0d036392c13"
+    },
+    {
+      "path": "scripts/compare_versions.py",
+      "bytes": 4502,
+      "sha256": "047025fac09545591e73cb17c0327d6922f13771b11b969457f2287d15590d3f"
+    },
+    {
+      "path": "scripts/doctor.py",
+      "bytes": 1164,
+      "sha256": "794fb1c783f9657bff7d033f79ef3010993c3268f846238ed55a63cab9e39c2e"
+    },
+    {
+      "path": "scripts/export_neutral.py",
+      "bytes": 1699,
+      "sha256": "46bab0c01087f176fabab0ec63c45b0ed21ef1f4ee57f8c8331356a4bb3b1607"
+    },
+    {
+      "path": "scripts/extended_selftest.py",
+      "bytes": 16451,
+      "sha256": "482d486a43b1a56088257e577010f8ba67f3ea545138a4848a270362602d99bf"
+    },
+    {
+      "path": "scripts/gui_helper.py",
+      "bytes": 7171,
+      "sha256": "b277ab0793b0eaba9b3c972b4ca80cc3e05dea61ea433ffacfbca6d587ca08ed"
+    },
+    {
+      "path": "scripts/inspect_model.py",
+      "bytes": 1815,
+      "sha256": "0822a871ba2d7b590fc0106035f67b0e879ac35a0b085402481d67b78e16fbff"
+    },
+    {
+      "path": "scripts/render.py",
+      "bytes": 1071,
+      "sha256": "2d904a747d7110150a37d37c512be14a503c7d121b13717a6c2c5d25b8dd4cca"
+    },
+    {
+      "path": "scripts/seal_chamfer.py",
+      "bytes": 3253,
+      "sha256": "1b38ae987c752036c082e1b8d04b92c55014eaaa45ba25404d2122bc6de83b31"
+    },
+    {
+      "path": "scripts/sw_constants.py",
+      "bytes": 651,
+      "sha256": "49fc562a0c7367076da5cd61353320635cb4160f78bef09c9922f655f8d5b9c6"
+    },
+    {
+      "path": "scripts/swlib.py",
+      "bytes": 18703,
+      "sha256": "48c1e6cd065c476a0cba646a5255127f8b6f546ee96a52b12bede81ea618a56e"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 8851,
+      "sha256": "4abb865ab8bb3be631bc53b3023b3aa45396ea4bb93566831f3de0fef7215ade"
+    },
+    {
+      "path": "tests/test_assistant.py",
+      "bytes": 12442,
+      "sha256": "a5429002d412ed06ae240f3b096149733ac9d6ffd4469dd0359f55c7715ad334"
+    },
+    {
+      "path": "tests/test_offline.py",
+      "bytes": 10714,
+      "sha256": "22168899df61cd3a304e49bb8b4de3f52ddc1ccc2be199cc85490766c66c7186"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 3112,
+      "sha256": "067e5c3880fe3c5f3a3e2fb70f9195163cf717bce34e02f72ebe7b5daa2747a5"
+    },
+    {
+      "path": "中文使用指南.md",
+      "bytes": 3975,
+      "sha256": "6449a8229b8494ec54ded24d00aa3d1fc03825d09c9752372656c708dc8663ac"
+    },
+    {
+      "path": "启动助手.cmd",
+      "bytes": 701,
+      "sha256": "8217c30efedb34e626d4966525a3911ef2c32d15dec8ee53d1759c31ba02a6e8"
+    },
+    {
+      "path": "安装基础环境.cmd",
+      "bytes": 699,
+      "sha256": "2cf8dc811015fca086a6821e14949fd597bf579c3394c450b386bbb1f8350906"
+    },
+    {
+      "path": "文件说明.md",
+      "bytes": 13745,
+      "sha256": "be6d54df862837da6d60ebdd21c907bd604c70cb7d7951e1a11995d587865ca4"
+    }
+  ],
+  "license": "MIT for authorized contributions; see THIRD_PARTY_NOTICES.md for provenance limitations"
+}
